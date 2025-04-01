@@ -1,0 +1,330 @@
+/* Genel Stiller */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Dil Seçici */
+.language-selector {
+  text-align: right;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.language-selector button {
+  background: none;
+  border: 1px solid #fff;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.language-selector button:hover {
+  background-color: #fff;
+  color: #2c3e50;
+}
+
+/* Ana Container */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Kutular */
+.left-box, .right-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+/* Profil Bölümü */
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.name-title {
+  position: relative;
+}
+
+.name-title h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.name-title h2 {
+  margin: 5px 0 0 0;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.student-id {
+  font-size: 1.2rem;
+  color: #3498db;
+  font-weight: bold;
+  margin-top: 5px;
+  background-color: #f0f8ff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  border-left: 3px solid #2c3e50;
+}
+
+/* Hakkımda */
+.about-me {
+  margin-bottom: 20px;
+}
+
+.about-me h3, 
+.motivation h3, 
+.skills h3, 
+.certificates h3, 
+.contact-info h3 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.about-me p, 
+.motivation p {
+  text-align: justify;
+}
+
+/* Eğitim ve Dil Kutuları */
+.education-box, 
+.languages-box {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 4px solid #3498db;
+}
+
+.education-box h3, 
+.languages-box h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.education-box ul, 
+.languages-box ul,
+.certificates ul {
+  padding-left: 20px;
+}
+
+.education-box a,
+.certificates a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.education-box a:hover,
+.certificates a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Sertifikalar */
+.certificates {
+  margin-top: 20px;
+}
+
+/* İletişim Bilgileri */
+.contact-info {
+  margin-bottom: 25px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #3498db;
+  width: 20px;
+  text-align: center;
+}
+
+/* Motivasyon */
+.motivation {
+  margin: 25px 0;
+}
+
+/* Beceriler */
+.skills {
+  margin-top: 20px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-category h4 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-items span {
+  background-color: #e0e0e0;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.name-footer {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .left-box, 
+  .right-box {
+      width: 90%;
+      max-width: none;
+  }
+  
+  .profile-header {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .profile-photo {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+
+  .student-id {
+      font-size: 1rem;
+      padding: 2px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-items span {
+      font-size: 0.8rem;
+      padding: 2px 6px;
+  }
+  
+  .profile-photo {
+      width: 80px;
+      height: 80px;
+  }
+  
+  .name-title h1 {
+      font-size: 1.5rem;
+  }
+  
+  .name-title h2 {
+      font-size: 1rem;
+  }
+
+  .student-id {
+      font-size: 0.9rem;
+  }
+  
+  .language-selector {
+      text-align: center;
+  }
+  
+  .language-selector button {
+      margin: 0 3px;
+      padding: 3px 8px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.left-box, 
+.right-box {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Linkler */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo - Mehmet Berkay Yelkanat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="language-selector">
+        <button id="tr">Türkçe</button>
+        <button id="en">English</button>
+        <button id="ru">Русский</button>
+    </div>
+
+    <div class="container">
+        <div class="left-box">
+            <div class="profile-section">
+                <div class="profile-header">
+                    <img src="images/profile.jpg" alt="Profil Fotoğrafı" class="profile-photo">
+                    <div class="name-title">
+                        <h1 class="name" data-i18n="name">Mehmet Berkay Yelkanat</h1>
+                        <h2 class="title" data-i18n="title">Yapay Zeka ve Siber Güvenlik Geliştiricisi</h2>
+                        <div class="student-id">TUR-10380</div>
+                    </div>
+                </div>
+                <div class="about-me">
+                    <h3 data-i18n="about">Hakkımda</h3>
+                    <p data-i18n="aboutText"></p>
+                </div>
+                
+                <div class="education-box">
+                    <h3 data-i18n="education">Eğitim</h3>
+                    <ul>
+                        <li><a href="https://vefaanadolulisesi.meb.k12.tr/" target="_blank" data-i18n="schoolLink">Vefa Anadolu Lisesi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="languages-box">
+                    <h3 data-i18n="languages">Diller</h3>
+                    <ul>
+                        <li data-i18n="turkish">Türkçe - Ana Dil</li>
+                        <li data-i18n="english">İngilizce - B1</li>
+                        <li data-i18n="russian">Rusça - A2</li>
+                    </ul>
+                </div>
+                
+                <div class="certificates">
+                    <h3 data-i18n="certificates">Sertifikalarım</h3>
+                    <ul id="certificate-list">
+                        <!-- JS ile eklenecek -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="right-box">
+            <div class="contact-info">
+                <h3 data-i18n="contact">İletişim</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> <span id="email">berkayyelkanat00@gmail.com</span></li>
+                    <li><i class="fab fa-yandex"></i> <a href="#" id="yandex-link" data-i18n="yandexDisk">Yandex Disk</a></li>
+                    <li><i class="fab fa-github"></i> <a href="#" id="github-link" data-i18n="github">GitHub Profilim</a></li>
+                    <li><i class="fas fa-phone"></i> <span id="phone">+90 555 144 02 01</span></li>
+                </ul>
+            </div>
+            
+            <div class="motivation">
+                <h3 data-i18n="motivationTitle">Motivasyon</h3>
+                <p data-i18n="motivationText"></p>
+                
+                <h3 data-i18n="whyUniversity">Katkılarım</h3>
+                <p data-i18n="whyUniversityText"></p>
+            </div>
+            
+            <div class="skills">
+                <h3 data-i18n="skills">Teknik Beceriler</h3>
+                <div class="skill-category">
+                    <h4>Python</h4>
+                    <div class="skill-items">
+                        <span>PyTorch</span>
+                        <span>OpenCV</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>aiohttp</span>
+                        <span>Binance API</span>
+                        <span>MySQL</span>
+                        <span>PyMongo</span>
+                        <span>Django</span>
+                        <span>PyQt5</span>
+                        <span>Sqlmap</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Go</h4>
+                    <div class="skill-items">
+                      <span>GORM</span>
+                      <span>net/http</span>
+                      <span>database/sql</span>
+                      <span>Gin</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>SQL</h4>
+                    <div class="skill-items">
+                        <span>MySQL</span>
+                        <span>SQLite</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>HTML/CSS</h4>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Node.js</h4>
+                    <div class="skill-items">
+                      <span>Express</span>
+                      <span>Axios</span>
+                      <span>Mongoose</span>
+                      <span>Nodemon</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p><span id="studentNumber">10380</span></p>
+        <p class="name-footer" data-i18n="name">Mehmet Berkay Yelkanat</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
